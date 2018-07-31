@@ -1,0 +1,322 @@
+﻿
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#map {
+	width: 100%;
+	height: 640px;
+	position: relative;
+	overflow: hidden;
+	left: 96px;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + icon{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + icon{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:5px solid #f00;
+}
+
+table {
+    font-size: 12px;
+}
+
+
+
+#replyHead{
+
+}
+
+
+#reviewContainer{
+
+   position: relative;
+left: 146px;
+}
+#replyPanel{
+    cursor:pointer;
+}
+
+#contents {
+	background-color: white;
+    width:inherit;
+	display: flex;
+	flex-direction: column;
+    overflow:hidden;
+   
+}
+#createReview {
+	cursor: pointer;
+	color: blue;
+}
+
+#move_me{
+
+    
+    transition-property: transform;
+    transition-duration:2s;
+   
+    
+}
+#move_me:focus{
+    width:300px;
+    transform:translateX(50px);
+}
+
+.item-container {
+	
+	
+	position: absolute;
+    height:100%;
+    top:51px;
+	width: 300px;
+	transition-property: transform;
+	transition-duration: 2s;
+	left: -300px;
+    
+}
+
+
+#directionBlock {
+	margin-top: 15px;
+	height: inherit;
+	width: inherit;
+}
+
+#slide_box {
+	height: 45px;
+	width: 20px;
+	position: absolute;
+    top:300px;
+	left: 1px;
+}
+
+ 
+.squareblock {
+	height: 22px;
+	width: 100px;
+	/*border: dotted;*/
+	flex: none;
+	margin-top: 5px;
+}
+
+#directions{
+    width:inherit;
+    height:auto;
+}
+#pReviews {
+	
+	width: inherit;
+	z-index: 0;
+	margin-bottom: 10px;
+	height: auto;
+	margin-top: 10px;
+    flex: auto;
+    flex-direction: column;
+    
+}
+
+#pDescript{
+    height:200px;
+    width:inherit;
+    flex:auto;
+}
+.rContainer {
+	display: flex;
+	width: auto;
+    height: 403px;
+	
+	margin-top: 5px;
+   
+    overflow:auto;
+    flex-direction:column
+   
+    
+	/* z-index: 1; */
+}
+
+#rContainer{
+    display:block;
+    overflow:scroll;
+    overflow-x:hidden;
+    height:400px;
+      
+}
+
+#right-panel {
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      #right-panel select, #right-panel input {
+        font-size: 15px;
+      }
+
+      #right-panel select {
+        width: 100%;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+      }
+      #right-panel {
+        height: 100%;
+        float: right;
+        width: 390px;
+        overflow: auto;
+      }
+
+.rBlock {
+	height: 150px;
+	border-bottom: aliceblue double;
+	margin-top: 5px;
+	width: inherit;
+    margin-right:10px;
+
+}
+
+
+.rExpand{
+
+   
+    visibility:hidden;
+    
+   
+}
+
+
+.rExpanded {
+	display: table;
+	visibility: visible;
+	position: absolute;
+	height: 434px;
+	width: 300px;
+	top: 271px;
+	right: 0px;
+	
+	opacity: 1;
+}
+
+.clickable
+{
+    cursor: pointer;
+}
+
+
+#listing {
+    position: relative;
+    width: 200px;
+    height: 470px;
+    overflow: auto;
+    cursor: pointer;
+    overflow-x: hidden;
+    left: 99px;
+}
+
+#findhotels {
+    position: relative;
+    text-align: right;
+    width: 100px;
+    top: 67px;
+    font-size: 14px;
+    padding: 4px;
+    background-color: #fff;
+    z-index:1;
+    left: 82px;
+}
+
+#locationField {
+    position: relative;
+    width: 190px;
+    height: 25px;
+
+    top: 46px;
+    z-index: 5;
+    background-color: #fff;
+    left: 192px;
+}
+
+#controls {
+    position: relative;
+    left: 395px;
+    width: 140px;
+    top: 23px;
+    z-index: 4;
+    background-color: #fff;
+}
+
+#autocomplete {
+    width: 100%;
+}
+
+#country {
+    width: 100%;
+}
+
+.placeIcon {
+    width: 20px;
+    height: 34px;
+    margin: 4px;
+}
+
+.hotelIcon {
+    width: 24px;
+    height: 24px;
+}
+
+#resultsTable {
+    border-collapse: collapse;
+    width: 240px;
+}
+
+
+#rating {
+    font-size: 13px;
+    font-family: Arial Unicode MS;
+}
+
+.iw_table_row {
+    height: 18px;
+}
+
+.iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+}
+
+.iw_table_icon {
+    text-align: right;
+}
+
+#header {
+    height: 24px;
+    
+    margin-bottom: 6px;
+    display: block;
+    line-height: 15px;
+}
+
+
+#reviewParent{
+    
+}
+
+#reviewTextArea {
+
+   
+}
+#submitButton{
+  
+}
